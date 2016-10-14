@@ -5,12 +5,12 @@ int main(void)
 char z = 'a';
 while (z <= 'z')
 {
-if(z !='q' && z != 'e')
+if (z != 'q' && z != 'e')
 {
 putchar(z);
 }
 z++;
 }
 putchar('\n');
-return (0)
+return (0);
 }
