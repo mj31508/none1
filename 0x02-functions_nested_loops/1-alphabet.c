@@ -1,22 +1,21 @@
 #include "holberton.h"
-
-int main(void)
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+void print_alphabet(void)
 {
-  int n = 1;
-  while (n > 0);
-  {
-  _putchar('H');
-  _putchar('o');
-  _putchar('l');
-  _putchar('b');
-  _putchar('e');
-  _putchar('r');
-  _putchar('t');
-  _putchar('o');
-  _putchar('n');
-  _putchar('\n');
-  n--;
+	int alpha;
+	char max = 'a';
 
-}
-  return 0;
+	alpha = 1;
+	max = 'a';
+	while (alpha < 27)
+	{
+		alpha = alpha + 1;
+		_putchar(max);
+		max = max + 1;
+	}
+	_putchar('\n');
 }
