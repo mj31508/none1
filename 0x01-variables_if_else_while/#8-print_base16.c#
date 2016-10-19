@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stlib.h>
+
+int main()
+{
+  char firstname(20);
+char crush();
+ int numberofBabies();
+
+ printf("what is your name? \n");
+ scanf("%s", firstname);
+
+ printf("what is your name?");
+ scanf("%s", crush);
+
+ printf("what is your name?");
+ scanf("%s", &numberofBabies);
+ 
+
+ 
+ return 0;
+
+  }
