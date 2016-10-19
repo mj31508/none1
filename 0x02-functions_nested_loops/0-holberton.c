@@ -8,7 +8,6 @@ int main(void)
 {
 	int n = 1;
 
-	while (n > 0)
 	{
 		_putchar('H');
 		_putchar('o');
