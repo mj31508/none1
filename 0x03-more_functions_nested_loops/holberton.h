@@ -14,3 +14,4 @@ void more_numbers(void);
 /*skipping more numbers*/
 void print_line(int n);
 /*some comment*/
+void print_diagonal(int n);
