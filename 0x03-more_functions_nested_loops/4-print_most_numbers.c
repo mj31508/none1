@@ -1,18 +1,20 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_most_numbers - print 0 1 3 5 6 7 8 9
  *
- * Return: Always 0.
+ * Return: void
  */
 void print_most_numbers(void)
 {
-  int i = 0;
-  while (i < 10)
-    {
-      if(i != 2 && i != 4);
-      _putchar(i);
-	i++;
-    }
-  _putchar('\n');
+	int c;
+
+	c = '0';
+	while (c <= '9')
+	{
+		if (c != '2' && c != '4')
+			_putchar(c);
+		c++;
+	}
+	_putchar('\n');
 }
