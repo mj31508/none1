@@ -1,17 +1,16 @@
-#include "holberton.h"
+#include  "holberton.h"
 
 /**
- * 
- * print_numbers - write a function that prints o through 9.
+ * print_numbers - print all numbers from 0 to 9
+ *
  * Return: void
  */
 void print_numbers(void)
 {
- int  i = 0;
-    while (i <= 10)
-      {
-	_putchar (i + '0');
-	i++;
-      }
-    _putchar ('\n');
+	int c;
+
+	c = '0';
+	while (c <= '9')
+		_putchar(c++);
+	_putchar('\n');
 }
