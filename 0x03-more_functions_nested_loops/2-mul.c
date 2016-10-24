@@ -1,12 +1,12 @@
 #include "holberton.h"
-/**
- * 2-mul.c - multipluing integers
- *@a: multiplier
- *@b: multiplier
- * Return: Always 0.
- */
 
+/**
+ * mul - basic cover up of *
+ * @a: first integer to multiply
+ * @b: second integer to multiply
+ * Return: product of a by b
+ */
 int mul(int a, int b)
 {
-  return(a * b);
+	return (a * b);
 }
