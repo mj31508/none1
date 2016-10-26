@@ -6,14 +6,4 @@
  *
  * Return: Always 0.
  */
-int _strlen(char *s)
-{
-	int length;
-	length =0;
-	while (*s ! = '/0')
-	{
-		length++;
-		*s++;
-	}
-	return (length);
-}
+int main(void)

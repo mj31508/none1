@@ -1,12 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <math.h>
 
-int main () {
+int main()
+{
+	int tuna = 19;
 
-	int  var1;
-	char var2[10];
+	printf("Address \t Name \t Value \n");
 
-	printf("Address of var1 variable: %x\n", &var1  );
-	printf("Address of var2 variable: %x\n", &var2  );
+	int * pTuna = &tuna;
+
+	printf("%p \t %s \t %d \n", pTuna, "tuna", tuna);
+
+	printf("%p \t %s \t %p \n", &pTuna, "pTuna", pTuna);
 
 	return 0;
 }

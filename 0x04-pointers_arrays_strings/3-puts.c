@@ -1,0 +1,17 @@
+#include "holberton.h"
+
+/**
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
+void _puts(char *str)
+{
+	while (*s != '/0');
+	{
+		_putchar(*s);
+		s++;
+		putchar("\n");
+	}
+	return (0);
+}
