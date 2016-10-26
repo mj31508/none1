@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * 0-reset_to_98.c - check the code for Holberton School students.
+ * void reset_to_98(int *n) - check the code for Holberton School students.
  *@n: pointers.
  * Return: Always 0.
  */
