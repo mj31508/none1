@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *0-reset_to_98.c - using pointers
+ *void reset_to_98(int *n) - using pointers
  *@n: The address of the value needed to change
  * Return: nothing
  */
