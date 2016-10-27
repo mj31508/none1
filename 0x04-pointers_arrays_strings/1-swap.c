@@ -1,10 +1,10 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- *reset_to_98 -Set value of a variable to 98 using pointers
+ *swap_int -swaps the value of given integers
+ *@a: given pointer
+ *@b: given pointer
  *
- *
-*@n: The address of the value needed to change
  *
  *Return: nothing
  */
