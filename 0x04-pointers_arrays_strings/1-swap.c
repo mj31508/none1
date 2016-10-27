@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  *reset_to_98 -Set value of a variable to 98 using pointers
  *
