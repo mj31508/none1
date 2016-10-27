@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * _strlen - calculates the length of a string.
+ *@s: pointer to the array character.
  *
- * Return: Always 0.
+ *Return: return i
  */
 int main(void)
 {
