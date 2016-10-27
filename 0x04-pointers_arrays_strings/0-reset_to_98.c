@@ -1,7 +1,8 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
- * reset_to_98 - using pointers
+ * reset_to_98- using pointers
  * @n: The address of the value needed to change
  * Return: nothing
  */
