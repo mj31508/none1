@@ -2,18 +2,18 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _strlen - calculates the length of a string.
+ *@s:pointer to the array character.
+ * Return: Returning i.
  */
 int _strlen(char *s)
 {
-	int length;
-	length =0;
-	while (*s ! = '/0')
+	int i;
+	i = 0;
+	while (*s != '\0')
 	{
-		length++;
-		*s++;
+		i++;
+		s++;
 	}
-	return (length);
+	return (i);
 }

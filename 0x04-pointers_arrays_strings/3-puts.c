@@ -7,11 +7,8 @@
  */
 void _puts(char *str)
 {
-	while (*s != '/0');
-	{
-		_putchar(*s);
-		s++;
-		putchar("\n");
-	}
+	str = "I am a string";
+	_puts(str);
+	putchar('\n');
 	return (0);
 }
