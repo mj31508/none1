@@ -8,9 +8,13 @@ int _strlen(char *s);
 void _puts(char *str);
 /**using pointers to reverse a string**/
 void print_rev(char *s);
+
 /**reversing a string**/
 void rev_string(char *s);
 /**question 7**/
 void puts_half(char *str);
 void print_array(int *a, int n);
 /**question 8**/
+void _puts(char *str);
+/**question 3**/
+int _putchar(char c);
