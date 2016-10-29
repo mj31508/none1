@@ -1,22 +1,32 @@
 #include "holberton.h"
-#include <stdio.h>
-/**
- * _strcmp - compares two strings and returns their difference
- *
- * @s1: the first string
- * @s2: the second string
- * Return: 0 if match, s1-s2 otherwise
- */
-int _strcmp(char *s1, char *s2)
-{
-	int n;
 
-	for (n = 0; *(s1 + n) == *(s2 + n); n++)
+/**
+ * *_strncpy - copies a string.
+ * @dest: string to be appended
+ * @src: string to be appended from
+ * @n: number of bytes from src
+ * Return: a pointer to the resulting string dest
+ **/
+
+char *_strncpy(char *dest, char *src, int n)
+{
+	int i;
+
+	if (n <= 0)
 	{
-		if (*(s1 + n) == '\0')
-		{
-			return (0);
-		}
+		return (dest);
 	}
-	return (*(s1 + n) - *(s2 + n));
+
+	i = 0;
+
+	while (i < n && src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i++] = '\0';
+	}
+	return (dest);
 }
