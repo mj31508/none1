@@ -7,8 +7,7 @@
  * @y: 2nd int
  * Return: num
  */
-
-int add( int x, int y)
+int add(int x, int y)
 {
 	return (x + y);
 }
