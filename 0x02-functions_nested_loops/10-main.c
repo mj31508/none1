@@ -3,8 +3,8 @@
 
 /**
  * main - check the code for Holberton School students.
- *@x:lll
- *@y:fghh
+ *@x:1st int
+ *@y:2nd int
  * Return: Always 0.
  */
 int main(void)
