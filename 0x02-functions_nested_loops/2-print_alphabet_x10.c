@@ -5,7 +5,7 @@
  *
  *Return: Always 0
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int num = 0;
 
@@ -17,10 +17,10 @@ void print_alphabet(void)
 		while (name <= 'z')
 
 		{
-			putchar(name);
+			_putchar(name);
 			name++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		name++;
 	}
 }
