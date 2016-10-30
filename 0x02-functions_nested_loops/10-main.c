@@ -5,7 +5,7 @@
  * main - check the code for Holberton School students.
  *@x:1st int
  *@y:2nd int
- * Return: Always 0.
+ * Return: num
  */
 int main(void)
 {
