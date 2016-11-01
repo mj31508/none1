@@ -4,7 +4,7 @@
  * @dest: destination pointer variable
  * @src: source pointer variable
  * @n: number of bytes to be copied
- * Return: desttination
+ * Return: destination
  */
 void simple_print_buffer(char *buffer, unsigned int size)
 {
