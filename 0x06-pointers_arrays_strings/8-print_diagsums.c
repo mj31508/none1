@@ -9,26 +9,26 @@
  */
 void print_diagsums(int *a, int size)
 {
-  int i, sum;
+	int i, sum;
 
-  i = 0;
-  sum = 0;
-  while (i < size)
-    {
-      sum += *(a + i);
-      i++;
-      a = a + size;
-    }
-  printf("%d, ", sum);
+	i = 0;
+	sum = 0;
+	while (i < size)
+	{
+		sum += *(a + i);
+		i++;
+		a = a + size;
+	}
+	printf("%d, ", sum);
 
-  a = a - size;
-  sum = 0;
-  i = 0;
-  while (i < size)
-    {
-      sum = sum + *(a + i);
-      i++;
-      a = a - size;
-    }
-  printf("%d\n", sum);
+	a = a - size;
+	sum = 0;
+	i = 0;
+	while (i < size)
+	{
+		sum = sum + *(a + i);
+		i++;
+		a = a - size;
+	}
+	printf("%d\n", sum);
 }
