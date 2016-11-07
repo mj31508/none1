@@ -1,45 +1,22 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
- * times_table - multiplication grid
- * Return: n/a
+ * print_to_98 - print all natural numbers from n to 98.
+ * @n: the number to start counting from to 98
+ * Return: void returns nothing.
  */
-void times_table(void)
+void print_to_98(int n)
 {
-	int x, y;
-
-	x = 0;
-	while (x <= 9)
+	if (n < 98)
 	{
-		y = 0;
-		while (y <= 9)
-		{
-			if ((x * y) < 10)
-			{
-				if (y != 0)
-				{
-					_putchar(' ');
-				}
-				_putchar((x * y) + '0');
-				if (y != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
-			else
-			{
-				_putchar((x * y) / 10 + '0');
-				_putchar((x * y) % 10 + '0');
-				if (y != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
-			y++;
-		}
-		_putchar('\n');
-		x++;
+		for (n = n; n < 98; n++)
+			printf("%d, ", n);
+		printf("%d\n", 98);
+	}
+	else
+	{
+		for (n = n; n > 98; n--)
+			printf("%d, ", n);
+		printf("%d\n", 98);
 	}
 }
