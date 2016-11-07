@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - write a function that reverses a stringl
+ *@s: S is a pointer
  *
  * Return: Always 0.
  */
