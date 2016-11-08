@@ -1,0 +1,20 @@
+#include "holberton.h"
+2	 
+3	 /**
+4	  * _strlen - return the length of a string
+5	   *
+6	    * @s: string whose length to return
+7	     *
+8	      * Return: length of @s
+9	       */
+10	       int _strlen(char *s)
+11	       {
+12		int n, m = 0;
+13		
+14			while (*(s + m) != '\0')
+15			      {
+16					++n;
+17							m++;
+18								}
+19									return (n);
+20									}
