@@ -1,4 +1,12 @@
+#include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
+/**
+ * _strlen - calculates and returns the length of a string
+ *@str: pointer
+ * 
+ * Return: the string's length
+ */
 
 int _strlen(char *str)
 {
@@ -11,7 +19,13 @@ int _strlen(char *str)
 	}
 	return (i);
 }
-
+/**
+ * _strcpy - uses loops and _strlen to cat two strings
+ *
+ * @src: gets copied to dest
+ * @dest: becomes the two strings combined
+ * Return: a pointer to dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i;
@@ -24,7 +38,12 @@ char *_strcpy(char *dest, char *src)
 	}
 	return (dest);
 }
-
+/**
+ * argstostr - concatenates and prints strings from argv
+ * @ac: argc in clever disguise
+ * @av: argv[] in clever disguise
+ * Return: char
+ */
 char *argstostr(int ac, char **av)
 {
 	int i;
