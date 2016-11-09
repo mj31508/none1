@@ -3,8 +3,8 @@
 #include <stdlib.h>
 /**
  * _strlen - calculates and returns the length of a string
- *@str: pointer
- * 
+ * @str: pointer
+ *
  * Return: the string's length
  */
 
