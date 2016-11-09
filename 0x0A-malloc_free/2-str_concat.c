@@ -1,34 +1,43 @@
-#include "holberton.h"
 #include <stdlib.h>
+#include <string.h>
 
-/**
- * str_concat - concatenate two strings using malloc
- * @s1: string 1
- * @s2: string 2
- * Return: pointer to concat string
- */
+int _strlen(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str && str[i])
+	{
+		++i;
+	}
+	return (i);
+}
+
+char *_strcpy(char *dest, char *src)
+{
+	int i;
+
+	i = 0;
+	while (src && src[i])
+	{
+		dest[i] = src[i];
+		++i;
+	}
+	return (dest);
+}
 
 char *str_concat(char *s1, char *s2)
 {
-	char *a;
-	int i, j, c, d;
+	int l;
+	char *s;
 
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; s2[j] != '\0'; j++)
-		;
-
-	a = malloc((i * sizeof(*s1)) + (j * sizeof(*s2)));
-	if (a == NULL)
-		return (NULL);
-
-	for (c = 0, d = 0; c < (i + j); c++)
+	l = _strlen(s1) + _strlen(s2) + 1;
+	s = malloc(l * sizeof(char));
+	if (s == NULL)
 	{
-		if (c < i)
-			a[c] = s1[c];
-		else
-			a[c] = s2[d++];
+		return (NULL);
 	}
-
-	return (a);
+	_strcpy(s, s1);
+	_strcpy(s + _strlen(s1), s2);
+	return (s);
 }
