@@ -12,8 +12,8 @@ void *malloc_checked(unsigned int b)
 
 	sampptr = malloc(b);
 
-	if(sampptr == NULL)
-		 exit(98);
+	if (sampptr == NULL)
+		exit(98);
 	else
 		return (sampptr);
 
