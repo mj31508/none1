@@ -1,52 +1,29 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - creates 2 dimensional grid of integers.
- * @width: grid width.
- * @height: grid height.
- * Return: int, pointer to grid.
+ * array_range - creates an array of integers.
+ * @min: minimum value.
+ * @max: maximum value.
+ * Return: int pointer to new array.
  */
 
-int **alloc_grid(int width, int height)
+int *array_range(int min, int max)
 {
-	int **grid;
-	int i, j;
+	int i;
+	int *a;
 
-	i = j = 0;
-
-	if (width <= 0 || height <= 0)
+	i = 0;
+	if (min > max)
 		return (NULL);
 
-	grid = malloc(height * sizeof(int *));
-
-	if (grid == NULL)
+	a = malloc(((max + 1) - min) * sizeof(max));
+	if (!a)
 		return (NULL);
-
-	while (i < height)
+	while (min <= max)
 	{
-		*(grid + i) = malloc(width * sizeof(int));
-		if (*(grid + i) == NULL)
-		{
-			i--;
-			while (i >= 0)
-			{
-				free(*(grid + i));
-				i--;
-			}
-			free(grid);
-			return (NULL);
-		}
+		a[i] = min;
+		min++;
 		i++;
 	}
-	while (i < height)
-	{
-		while (j < width)
-		{
-			grid[i][j] = 0;
-			j++;
-		}
-		i++;
-	}
-	return (grid);
-
+	return (a);
 }
