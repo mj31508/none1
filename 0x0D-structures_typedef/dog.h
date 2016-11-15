@@ -1,11 +1,12 @@
 #ifndef DOGGY
 #define DOGGY
 /**
-* struct dog - define a new type of struch dog
-* @char: pointer for name
+* struct dog - define a new type of struct dog
+*
 * @owner: floater
 * @name: pointer for owner
 * @age: Structure
+*
 * Return: Always zero
 **/
 
