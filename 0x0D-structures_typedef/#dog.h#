@@ -1,7 +1,7 @@
 #ifndef DOGGY
 #define DOGGY
 /**
-* struct dog - define a new type of struch dog
+* struct dog - define a new type of struct dog
 * @char: pointer for name
 * @owner: floater
 * @name: pointer for owner
