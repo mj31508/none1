@@ -1,0 +1,3 @@
+user.name = "Foo";
+user.email = "foo.bar";
+user.age = 98;
