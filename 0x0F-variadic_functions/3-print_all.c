@@ -1,83 +1,34 @@
-#include <stdarg.h>
-#include <stdio.h>
-#include "variadic_functions.h"
-
-/*#define CSPEC(token) ("%"#token)
- */
-
-/**
- *
- *
- */
-
-void _print_c(va_list a)
+#rint_all(const char * const format, ...)
 {
-	printf("%c", va_arg(a, int));
-}
-
-void _print_i(va_list a)
-{
-	printf("%i", va_arg(a, int));
-}
-
-void _print_f(va_list a)
-{
-	printf("%f", va_arg(a, double));
-}
-
-void _print_s(va_list a)
-{
-	char *str;
-
-	str = va_arg(a, char *);
-	if (str == NULL)
-		str = "(nil)";
-	printf("%s", str);
-}
-
-
-
-/**
- * print_all - prints anything.
- * @format: list of types of args.
- * Return: void
- */
-
-void print_all(const char * const format, ...)
-{
-	typedef struct Dtypes
-	{
-		char cs;
-		char (*f)(va_list a);
-	}dtypes_t;
-
-	va_list ap;
-	int i, j;
-
-	dtypes_t dtypes[] = {
-		{'c', _print_c},
-		{'i', _print_i},
-		{'f', _print_f},
-		{'s', _print_s},
+	op_f ops[] = {
+		{"c", print_c},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
+		{NULL, NULL}
 	};
 
-	va_start(ap, format);
-	i = 0;
-	while (format[i])
+	unsigned int count, count2;
+	va_list add;
+	char *p;
+
+	count = 0;
+	p = "";
+	va_start(add, format);
+	while (format != NULL && format[count] != '\0')
 	{
-		j = 0;
-		while (j <= 4)
+		count2 = 0;
+		while (count2 < 4)
 		{
-			if (dtypes[j].cs == format[i])
+			if (format[count] == (*ops[count2].op))
 			{
-				dtypes[j].f(ap);
-				/*arg = va_arg(ap, dtypes[j].dtype);
-				  printf(CSPEC(format[i]), arg); */
+				ops[count2].f(add, p);
+				p = (", ");
 			}
-			j++;
+			count2++;
 		}
-		i++;
+		count++;
 	}
-	va_end(ap);
+	va_end(add);
 	printf("\n");
 }
