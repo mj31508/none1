@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stddef.h>
 
+/**
+ *list_len - returns a num of elements from linked list
+ *@h: is the head
+ *Return: elements
+ */
+
 size_t list_len(const list_t *h);
 {
 	size_t numbers;
