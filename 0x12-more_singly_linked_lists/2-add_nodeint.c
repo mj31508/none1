@@ -4,8 +4,9 @@
 #include "lists.h"
 
 /**
- * listint_t - adds a new node at the beginning
+ * add_nodeint - adds a new node at the beginning
  *@head:pointer of a pointer to the first element
+ *@n: constant int
  *
  *Return: New element or NULL is failed
  */
@@ -17,12 +18,12 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	temp = malloc(sizeof(listint_t));
 	if (temp == NULL)
 	{
-		return NULL;
-		temp -> h = h;
-		temp -> next = *head;
-		head = new;
+		return (NULL);
+		temp->n = n;
+		temp->next = *head;
+		*head = temp;
 
 
 	}
-	return (new);
+	return (temp);
 }
