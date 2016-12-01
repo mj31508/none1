@@ -1,5 +1,7 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  *print_listint - goes through a linked list and prints its elements
  *@h: a pointer to a struct
