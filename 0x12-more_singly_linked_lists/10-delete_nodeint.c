@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *delete_node_at_index - deleting a node
+ *delete_nodeint_at_index - deleting a node
  *@head: double pointer
  *@index: index
  *Return: Returns 1 if won, return -1 is lost
