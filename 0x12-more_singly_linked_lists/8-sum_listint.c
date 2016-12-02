@@ -12,26 +12,13 @@
 
 int sum_listint(listint_t *head)
 {
-	listint_t *temp;
-	int total;
+	int num;
 
-	if (head == NULL)
+	num = 0;
+	while(head)
 	{
-		return (total);
-		temp = malloc(sizeof(listint_t);
-}
-			if (temp == NULL)
-			{
-				return (total);
-
-				temp = head;
-				total += head->n;
-			}
-		while (temp->next != NULL)
-		{
-			temp = temp->next;
-			total += temp-n;
-		}
-		free(temp);
-		return(total);
+		num += head->n;
+		head = head->next;
+	}
+	return(num);
 }
