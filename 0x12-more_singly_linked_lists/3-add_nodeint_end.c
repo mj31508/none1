@@ -4,19 +4,19 @@
 #include "lists.h"
 
 /**
- *listint_t - adds a new node at the end of the struc
+ *add_node_end - adds a new node at the end of the struc
  *@head: a double pointer
- *
+ *@n: Constant n
  *Return: The address of the new element of NULL if it failed
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *new, *temp;
+	listint_t *temp;
 
 	temp = malloc(sizeof(listint_t));
 
-	if (temp==NULL)
+	if (temp == NULL)
 	{
 		return (NULL);
 	}
@@ -31,7 +31,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (*head);
 	}
 
-	while (temp->next!=NULL)
+	while (temp->next != NULL)
 	{
 		temp = temp->next;
 		temp->next = *head;
