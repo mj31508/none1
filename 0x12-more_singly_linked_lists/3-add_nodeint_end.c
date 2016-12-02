@@ -12,7 +12,7 @@
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *temp;
+	listint_t *temp, *yellow;
 
 	temp = malloc(sizeof(listint_t));
 
@@ -30,11 +30,13 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = temp;
 		return (*head);
 	}
+	yellow = *head;
 
-	while (temp->next != NULL)
+	while (yellow->next != NULL)
 	{
-		temp = temp->next;
-		temp->next = *head;
+		yellow = yellow->next;
+
 	}
-	return (temp->next);
+	yellow->next = temp;
+	return (temp);
 }
