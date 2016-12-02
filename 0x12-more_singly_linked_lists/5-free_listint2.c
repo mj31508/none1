@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *listint_t - free the list
+ *free_listint2 - free the list
  *@head: double pointer
  *
  *Return: nothing
