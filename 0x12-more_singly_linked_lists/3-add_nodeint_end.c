@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *add_node_end - adds a new node at the end of the struc
+ *add_nodeint_end - adds a new node at the end of the struc
  *@head: a double pointer
  *@n: Constant n
  *Return: The address of the new element of NULL if it failed
