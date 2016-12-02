@@ -3,16 +3,23 @@
 #include <string.h>
 #include "lists.h"
 
+/**
+ *get_nodeint_at_index - move the nth
+ *@index: index of the struct
+ *@head: head pointer
+ *Return: NULL
+ */
+
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *nth;
+	unsigned int counter;
 
-	while (*head != NULL)
+	counter = 0;
+	while (counter <  index)
 	{
-		return(0);
-)
-		nth = next->index;
-		index = nth;
-		nth++;
+
+		head = head->next;
+		counter++;
 	}
+	return (head);
 }
