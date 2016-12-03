@@ -4,10 +4,11 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at -inserts a new node at position
+ * insert_nodeint_at_index -inserts a new node at position
  *@index: unsigned int
  *@n: int
  *@head: double pointer
+ *Return: done
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
@@ -15,9 +16,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 	listint_t *temp, *temp2;
 	unsigned int i;
 
-	i =0;
+	i = 0;
 
-	if (*head == NULL)
+	if (*head == NULL && index != 0)
 	{
 
 		return (NULL);
@@ -27,16 +28,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 
 	if (temp2 == NULL)
 		return (NULL);
-	temp2->n=n;
+	temp2->n = n;
 	if (index == 0)
 	{
 		temp2->next = *head;
 		*head = temp2;
-		return(temp2);
+		return (temp2);
 	}
 
 	temp = *head;
-	while (temp != NULL && i < index - 1 )
+	while (temp != NULL && i < index - 1)
 	{
 		temp = temp->next;
 		i++;
