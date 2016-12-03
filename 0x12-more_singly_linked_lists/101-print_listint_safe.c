@@ -20,14 +20,14 @@ size_t check_node(listptr_t **head, const listptr_t *n)
 		exit(98);
 	}
 	temp->store = (void *)n;
-	temp->temp= *head;
+	temp->temp = *head;
 	*head = temp;
 	return (temp);
 }
 
 /**
  * free_node- free mem
- *@head: pointer tl a pointer 
+ *@head: pointer tl a pointer
  *
  *
  *Return: void
