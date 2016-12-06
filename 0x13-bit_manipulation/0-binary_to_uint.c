@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *binary_to_unit - change
+ *binary_to_uint - change
  *@b: converts
  *Return: return converted number
  *
@@ -13,11 +13,11 @@ unsigned int binary_to_uint(const char *b)
 	int up;
 	unsigned int num;
 
-	if (b==NULL)
+	if (b == NULL)
 		return (0);
 
 	up = 0;
-	while(b[up] != NULL)
+	while (b[up] != NULL)
 	{
 		if (b[up] != '0' && b[up] != '1')
 			return (0);
