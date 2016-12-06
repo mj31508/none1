@@ -13,19 +13,19 @@ unsigned int binary_to_uint(const char *b)
 	int up;
 	unsigned int num;
 
-	if (b == NULL)
+	if (b == '\0')
 		return (0);
 
 	up = 0;
-	while (b[up] != NULL)
+	while (b[up] != '\0')
 	{
 		if (b[up] != '0' && b[up] != '1')
 			return (0);
-		up++
+		up++;
 	}
 	up = 0;
 	num = 0;
-	while (b[up] != NULL)
+	while (b[up] != '\0')
 	{
 		num = (num >> 1) | (b[up] - 48);
 		up++;
