@@ -1,0 +1,34 @@
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ *binary_to_unit - change
+ *@b: converts
+ *Return: return converted number
+ *
+ **/
+
+unsigned int binary_to_uint(const char *b)
+{
+	int up;
+	unsigned int num;
+
+	if (b==NULL)
+		return (0);
+
+	up = 0;
+	while(b[up] != NULL)
+	{
+		if (b[up] != '0' && b[up] != '1')
+			return (0);
+		up++
+	}
+	up = 0;
+	num = 0;
+	while (b[up] != NULL)
+	{
+		num = (num >> 1) | (b[up] - 48);
+		up++;
+	}
+	return (num);
+}
