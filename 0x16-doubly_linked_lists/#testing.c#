@@ -1,0 +1,9 @@
+struct node* GetNewNode(int) {
+	struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+	newNode->data = x;
+	newNode->prev = NULL;
+	newNode->next = NULL;
+	return newNode;
+}
+void InsertAtHead(int x) {
+	struct Node* newNode = GetNewNode(x);
