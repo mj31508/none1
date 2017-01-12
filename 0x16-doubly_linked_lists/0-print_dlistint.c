@@ -5,7 +5,7 @@
  * @h: pointer to head of the list
  * Return: number of nodes in the list
  **/
-size_t print_dlistint(const dlistint_t *h) //print all elements of dlistint_t
+size_t print_dlistint(const dlistint_t *h)
 {
 	int i;
 
