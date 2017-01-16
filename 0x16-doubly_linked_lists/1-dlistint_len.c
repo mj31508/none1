@@ -1,22 +1,14 @@
 #include "lists.h"
-
 /**
- * dlistint_len - returns the len of a dlistint list
- *
- *
- *
- * @h: head of dlistint
- * Return: Returns n of elements 
+ * dlistint_len -  length of the list
+ * @h:  head of the list
+ * Return: N items in the linked list
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	int i;
+	size_t i;
 
-	i = 0;
-	while (h != NULL)
-	{
+	for (i = 0; h; i++)
 		h = h->next;
-		i++;
-	}
 	return (i);
 }
